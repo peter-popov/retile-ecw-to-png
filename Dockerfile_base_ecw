@@ -1,0 +1,12 @@
+FROM ubuntu:18.04
+
+
+RUN apt-get update && apt-get install -y unzip
+RUN apt install -y libpng-dev
+
+WORKDIR build
+
+ADD erdas-ecw-sdk-5.4.0-linux.zip .
+
+RUN unzip erdas-ecw-sdk-5.4.0-linux.zip
+RUN chmod +x ERDAS_ECWJP2_SDK-5.4.0.bin
