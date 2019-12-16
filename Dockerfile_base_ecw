@@ -10,3 +10,6 @@ ADD erdas-ecw-sdk-5.4.0-linux.zip .
 
 RUN unzip erdas-ecw-sdk-5.4.0-linux.zip
 RUN chmod +x ERDAS_ECWJP2_SDK-5.4.0.bin
+
+CMD [ "./ERDAS_ECWJP2_SDK-5.4.0.bin" ]
+
