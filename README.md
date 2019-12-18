@@ -23,7 +23,7 @@ ECW is proprietary format. Luckuly, a read-only SDK is avalible free of charge. 
     ➜ docker run -it ubuntu_ecw
 
 You will see something like this:
-
+```shell
     ERDAS ECW JPEG2000 SDK 5.4.0 Install
     ************************************
 
@@ -43,7 +43,7 @@ You will see something like this:
     Enter 6 for "Server Read-Write Redistributable"
     
     [1, 2, 3, 4, 5, or 6]
-
+```
 Choose option 1, read and accept the licince and finish the installation. After this we need to commit the installation results to the docker image so that we can use it aftrewards. Do the following:
 
     ➜ docker commit `docker ps -a --filter "ancestor=ubuntu_ecw" --filter "status=exited" --format "{{.ID}}" -n=1` ubuntu_ecw
