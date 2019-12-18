@@ -24,25 +24,25 @@ ECW is proprietary format. Luckuly, a read-only SDK is avalible free of charge. 
 
 You will see something like this:
 ```console
-    ERDAS ECW JPEG2000 SDK 5.4.0 Install
-    ************************************
+ERDAS ECW JPEG2000 SDK 5.4.0 Install
+************************************
 
 
-    Please select the appropriate license type to deploy ... 
+Please select the appropriate license type to deploy ... 
 
-    No License Fee Required 
-    ******************************** 
-    Enter 1 for "Desktop Read-Only Redistributable"
-    Enter 2 for "Mobile Read-Only (Local decoding restriction apply)"
+No License Fee Required 
+******************************** 
+Enter 1 for "Desktop Read-Only Redistributable"
+Enter 2 for "Mobile Read-Only (Local decoding restriction apply)"
 
-    Paid Licensees 
-    ******************************** 
-    Enter 3 for "Desktop Read-Write Redistributable"
-    Enter 4 for "Server Read-Only End User"
-    Enter 5 for "Server Read-Only Redistributable"
-    Enter 6 for "Server Read-Write Redistributable"
-    
-    [1, 2, 3, 4, 5, or 6]
+Paid Licensees 
+******************************** 
+Enter 3 for "Desktop Read-Write Redistributable"
+Enter 4 for "Server Read-Only End User"
+Enter 5 for "Server Read-Only Redistributable"
+Enter 6 for "Server Read-Write Redistributable"
+
+[1, 2, 3, 4, 5, or 6]
 ```
 Choose option 1, read and accept the licince and finish the installation. After this we need to commit the installation results to the docker image so that we can use it aftrewards. Do the following:
 
@@ -54,7 +54,9 @@ If the above does not work you can try a step by step option. For exampe:
 
 You should see id of the just exsited container:
 
-    f2835e9552bc: ubuntu_ecw "./ERDAS_ECWJP2_SDK-…" 2019-12-16 17:08:57 +0100 CET
+```console
+f2835e9552bc: ubuntu_ecw "./ERDAS_ECWJP2_SDK-…" 2019-12-16 17:08:57 +0100 CET
+```
 
 Commit it with the following command:
 
