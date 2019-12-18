@@ -23,7 +23,7 @@ ECW is proprietary format. Luckuly, a read-only SDK is avalible free of charge. 
     ➜ docker run -it ubuntu_ecw
 
 You will see something like this:
-```shell
+```console
     ERDAS ECW JPEG2000 SDK 5.4.0 Install
     ************************************
 
