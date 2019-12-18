@@ -6,7 +6,7 @@ This repository contains set of tools which I have used to convert berlin sateli
 You can find input data here(please check the licence): 
  - [Digitale farbige Orthophotos 2019 (DOP20RGB)](https://fbinter.stadt-berlin.de/fb/?loginkey=showMap&mapId=k_luftbild2019_rgb@senstadt)
 
-My goal was to obtain standard [slippy tiles](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames). I used docker reproducible resuls.
+My goal was to obtain standard [slippy tiles](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames). I used docker to provide reproducible resuls.
 
 Build base docker image
 ------------------
@@ -76,8 +76,7 @@ Run newly built docker container:
 
 (TODO: mount data volume)
 
-Inside the container:
+Inside the container (TODO: obtaining the vrt):
 
     ➜ root@d2057a62c34b:/data# gdal2tiles.py --profile=mercator --processes=6 -r bilinear -e -z 5-19 berlin.vrt berlin_tiles_hd/
 
-(TODO: obtaining the vrt)
